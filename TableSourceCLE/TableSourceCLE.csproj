@@ -196,14 +196,32 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DonationsController.cs" />
+    <Compile Include="Controllers\DonorOrganizationsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\RecipientOrganizationsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201611022138262_InitialCreate.cs" />
+    <Compile Include="Migrations\201611022138262_InitialCreate.Designer.cs">
+      <DependentUpon>201611022138262_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611022219285_added time annotation.cs" />
+    <Compile Include="Migrations\201611022219285_added time annotation.Designer.cs">
+      <DependentUpon>201611022219285_added time annotation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\DonorOrganization.cs" />
+    <Compile Include="Models\RecipientCategory.cs" />
+    <Compile Include="Models\Donation.cs" />
+    <Compile Include="Models\DonorCategory.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\RecipientOrganization.cs" />
+    <Compile Include="Models\TableSourceCLEContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -267,6 +285,26 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Donations\Create.cshtml" />
+    <Content Include="Views\Donations\Delete.cshtml" />
+    <Content Include="Views\Donations\Details.cshtml" />
+    <Content Include="Views\Donations\Edit.cshtml" />
+    <Content Include="Views\Donations\Index.cshtml" />
+    <Content Include="Views\DonorCategories\Create.cshtml" />
+    <Content Include="Views\DonorCategories\Delete.cshtml" />
+    <Content Include="Views\DonorCategories\Details.cshtml" />
+    <Content Include="Views\DonorCategories\Edit.cshtml" />
+    <Content Include="Views\DonorCategories\Index.cshtml" />
+    <Content Include="Views\DonorOrganizations\Create.cshtml" />
+    <Content Include="Views\DonorOrganizations\Delete.cshtml" />
+    <Content Include="Views\DonorOrganizations\Details.cshtml" />
+    <Content Include="Views\DonorOrganizations\Edit.cshtml" />
+    <Content Include="Views\DonorOrganizations\Index.cshtml" />
+    <Content Include="Views\RecipientOrganizations\Create.cshtml" />
+    <Content Include="Views\RecipientOrganizations\Delete.cshtml" />
+    <Content Include="Views\RecipientOrganizations\Details.cshtml" />
+    <Content Include="Views\RecipientOrganizations\Edit.cshtml" />
+    <Content Include="Views\RecipientOrganizations\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -278,6 +316,14 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201611022138262_InitialCreate.resx">
+      <DependentUpon>201611022138262_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611022219285_added time annotation.resx">
+      <DependentUpon>201611022219285_added time annotation.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

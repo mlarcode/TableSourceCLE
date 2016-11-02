@@ -1,0 +1,57 @@
+﻿@model IEnumerable<TableSourceCLE.Models.Donation>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pickUpDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pickupTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.weight)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ExpirationDate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.type)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pickUpDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pickupTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.weight)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ExpirationDate)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.donationID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.donationID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.donationID })
+        </td>
+    </tr>
+}
+
+</table>

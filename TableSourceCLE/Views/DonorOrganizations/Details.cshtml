@@ -1,0 +1,90 @@
+﻿@model TableSourceCLE.Models.DonorOrganization
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DonorOrganization</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DonorCategory.donorCategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DonorCategory.donorCategoryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.donorName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.donorName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.donorAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.donorAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.donorCity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.donorCity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.donorState)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.donorState)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.donorZip)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.donorZip)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.donorPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.donorPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.donorEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.donorEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.donorTaxID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.donorTaxID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.donorID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

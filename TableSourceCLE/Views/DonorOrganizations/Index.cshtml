@@ -1,0 +1,81 @@
+﻿@model IEnumerable<TableSourceCLE.Models.DonorOrganization>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DonorCategory.donorCategoryName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.donorName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.donorAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.donorCity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.donorState)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.donorZip)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.donorPhone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.donorEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.donorTaxID)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.DonorCategory.donorCategoryName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.donorName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.donorAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.donorCity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.donorState)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.donorZip)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.donorPhone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.donorEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.donorTaxID)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.donorID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.donorID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.donorID })
+        </td>
+    </tr>
+}
+
+</table>

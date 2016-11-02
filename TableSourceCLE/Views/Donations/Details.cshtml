@@ -1,0 +1,58 @@
+﻿@model TableSourceCLE.Models.Donation
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Donation</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pickUpDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pickUpDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pickupTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pickupTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.weight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.weight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExpirationDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExpirationDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.donationID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
