@@ -198,6 +198,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\DonationsController.cs" />
     <Compile Include="Controllers\DonorOrganizationsController.cs" />
+    <Compile Include="Controllers\FAQController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\RecipientOrganizationsController.cs" />
@@ -232,6 +233,20 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\Banner1.jpg" />
+    <Content Include="Images\banner2.jpg" />
+    <Content Include="Images\Cleveland_skyline_b&amp;w.jpg" />
+    <Content Include="Images\dinner with friends.jpg" />
+    <Content Include="Images\figs.jpg" />
+    <Content Include="Images\garlic.jpg" />
+    <Content Include="Images\marble2.jpg" />
+    <Content Include="Images\marble_texture4604.jpg" />
+    <Content Include="Images\pear2.jpg" />
+    <Content Include="Images\Pears.jpg" />
+    <Content Include="Images\strawberry.jpg" />
+    <Content Include="Images\table-349678_960_720.jpg" />
+    <Content Include="Images\Table.JPG" />
+    <Content Include="Images\table2.jpg" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -305,6 +320,7 @@
     <Content Include="Views\RecipientOrganizations\Details.cshtml" />
     <Content Include="Views\RecipientOrganizations\Edit.cshtml" />
     <Content Include="Views\RecipientOrganizations\Index.cshtml" />
+    <Content Include="Views\FAQ\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
